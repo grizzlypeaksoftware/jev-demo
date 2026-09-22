@@ -1,0 +1,17 @@
+{
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Edit|Write|NotebookEdit|WebFetch",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"$CLAUDE_PROJECT_DIR/.claude/hooks/jev-guard.js\"",
+            "timeout": 30,
+            "statusMessage": "JEV guard checking tool call…"
+          }
+        ]
+      }
+    ]
+  }
+}

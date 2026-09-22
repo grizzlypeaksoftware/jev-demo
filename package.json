@@ -1,0 +1,21 @@
+{
+  "name": "jev-demo",
+  "version": "1.0.0",
+  "description": "Simple support-inbox triage automation using TypeSafe's Jev model",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "triage": "node --env-file=.env triage.js",
+    "guard": "node --env-file=.env guard-demo.js",
+    "agent": "node --env-file=.env support-agent.js",
+    "hook-test": "node --env-file=.env hook-test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.127.0",
+    "@typesafe-ai/sdk": "^0.6.0"
+  }
+}
